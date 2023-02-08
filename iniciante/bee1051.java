@@ -5,6 +5,7 @@ import java.util.Scanner;
 /**
  *
  * @author gabrielcoelho
+ * 
  */
 public class bee1051 {
     public static void main(String[] args) {
@@ -35,5 +36,4 @@ public class bee1051 {
 	2000 -> 3000 -- 08 = 80
 	3000 -> 4500 -- 18 = 270 + 80 = 350
 	4500 -> .... -- 28
-
 */

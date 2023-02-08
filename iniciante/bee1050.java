@@ -5,6 +5,7 @@ import java.util.Scanner;
 /**
  *
  * @author gabrielcoelho
+ * 
  */
 public class bee1050 {
 

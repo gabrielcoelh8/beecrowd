@@ -9,26 +9,7 @@ import java.util.stream.Collectors;
  *
  * @author gabrielcoelho
  * 
-Leia 3 valores reais (A, B e C) e verifique se eles formam ou não um triângulo. Em caso positivo, calcule o perímetro do triângulo e apresente a mensagem:
-
-Perimetro = XX.X
-
-Em caso negativo, calcule a área do trapézio que tem A e B como base e C como altura, mostrando a mensagem
-
-Area = XX.X
-
-Entrada
-A entrada contém três valores reais.
-
-Saída
-O resultado deve ser apresentado com uma casa decimal.
-* 
-* 
-* 
-| b - c | < a < b + c
-| a - c | < b < a + c
-| a - b | < c < a + b
- */
+*/
 public class bee1043 {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
