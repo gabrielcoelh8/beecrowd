@@ -11,16 +11,16 @@ import java.util.Scanner;
 public class bee1061 {
 
     public static void main(String[] args) {
-        Scanner read = new Scanner(System.in); //read.nextLine();
-        String line1 = "Dia 5";
-        String line2 = "08 : 12 : 23";
-        String line3 = "Dia 9";
-        String line4 = "06 : 13 : 23";
+        Scanner read = new Scanner(System.in);
+        String line1 = read.nextLine();
+        String line2 = read.nextLine();
+        String line3 = read.nextLine();
+        String line4 = read.nextLine();
         
-        int dia1 = Integer.parseInt(line1.substring(4));
+        int dia1 = Integer.parseInt(line1.substring(4)); //string apartir de um index charAt
         String format1 = String.format("%02d", dia1);
         
-        LocalDateTime dataInicial = LocalDateTime.parse("2022-04-"+format1+"T"+ line2.replace(" ", "")); //replace tira o espaço, toString() para verificar
+        LocalDateTime dataInicial = LocalDateTime.parse("2022-04-"+format1+"T"+ line2.replace(" ", "")); //replace tira o espaço, toString() para verificar, T antes das horas
         
         int dia2 = Integer.parseInt(line3.substring(4));
         String format2 = String.format("%02d", dia2);
