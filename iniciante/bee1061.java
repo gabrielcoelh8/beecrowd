@@ -1,5 +1,6 @@
 package beecrowd.iniciante;
 
+import java.time.Duration;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
@@ -19,19 +20,19 @@ public class bee1061 {
         int dia1 = Integer.parseInt(line1.substring(4));
         String format1 = String.format("%02d", dia1);
         
-        LocalDateTime dataInicial = LocalDateTime.parse("2022-"+format1+"-20T"+ line2.replace(" ", ""));
+        LocalDateTime dataInicial = LocalDateTime.parse("2022-04-"+format1+"T"+ line2.replace(" ", "")); //replace tira o espaço, toString() para verificar
         
         int dia2 = Integer.parseInt(line3.substring(4));
         String format2 = String.format("%02d", dia2);
         
-        LocalDateTime dataFinal = LocalDateTime.parse("2022-"+format2+"-20T"+line4.replace(" ", ""));
+        LocalDateTime dataFinal = LocalDateTime.parse("2022-04-"+format2+"T"+line4.replace(" ", ""));
         
+        Duration duracao = Duration.between(dataInicial, dataFinal);  //calcula a diferença entre dois dateTime
         
-        System.out.println(format1);
-        
-        /*System.out.printf("3 dia(s)\n"
-                + "22 hora(s)\n"
-                + "1 minuto(s)\n"
-                + "0 segundo(s)\n");*/
+        System.out.printf("%d dia(s)\n"
+                + "%d hora(s)\n"
+                + "%d minuto(s)\n"
+                + "%d segundo(s)\n", 
+                duracao.toDaysPart(), duracao.toHoursPart(), duracao.toMinutesPart(), duracao.toSecondsPart());
     }
 }
