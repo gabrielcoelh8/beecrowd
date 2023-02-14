@@ -6,14 +6,13 @@ import java.util.Scanner;
  *
  * @author gabrielcoelho
  */
-public class bee1075 {
-
+public class bee1078 {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
         int N = read.nextInt();
         
-        for (int i = 0; i < 10000; i++) {
-            if(i%N==2) System.out.println(i);
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("%d x %d = %d\n", i, N, (N*i));
         }
     }
 }
