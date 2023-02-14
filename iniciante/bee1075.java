@@ -9,6 +9,6 @@ import java.util.Scanner;
 public class bee1075 {
 
     public static void main(String[] args) {
-        Scanner read2 = new Scanner(System.in);
+        Scanner read1 = new Scanner(System.in);
     }
 }
